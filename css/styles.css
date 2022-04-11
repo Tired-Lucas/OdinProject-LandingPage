@@ -8,11 +8,13 @@ body{
     padding:0;
 }
 .container{
-    margin: 0;
-}
-.header{
-    background: rgb(7, 1, 1);
+    display: flex;
+    flex-direction: column;
     color: azure;
+}
+
+.header{
+    background-color: rgb(7, 1, 1);
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -22,10 +24,11 @@ body{
     font-size: 1.1rem;
 }
 .header ul{
+    padding-right: var(--mainpadding);
     display: flex;
     list-style: none;
-    padding-right: var(--mainpadding);
 }
+
 .header li > a{
     text-decoration: none;
     color: azure;
@@ -37,4 +40,17 @@ body{
 }
 .logo{
     padding-left: var(--mainpadding);
+    font-family: lobster, sans-serif,arial;
+}
+.homepage{
+    background: #1F2937;
+    padding: 0 var(--mainpadding);
+}
+.products{
+    background-color: blue;
+    padding: 0 var(--mainpadding);
+}
+.randomphrase{
+    background-color: orange;
+    padding: 0 var(--mainpadding);
 }
